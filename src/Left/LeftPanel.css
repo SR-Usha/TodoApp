@@ -1,0 +1,17 @@
+@import '../Home/index.css';
+
+.left-container{
+    width: 40%;
+    height: 90%;
+    max-width: var(--left-max-width);
+    min-width: var(--left-min-width);
+}
+
+img {
+    min-height: var(--row-min-height);
+    max-height: var(--row-max-height);
+    object-fit: cover;
+    z-index: -1;
+    position: relative;
+}
+
