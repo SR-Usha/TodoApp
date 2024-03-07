@@ -12,7 +12,8 @@ function AllTask(props) {
             <p className='right-container-name'>
                 All Tasks
             </p>
-            <div className='cards-container' id="non-priority-container" onDragEnter={props?.onDragOver}>
+            <div className='cards-container' id="non-priority-container" onDragOver ={(e)=> e.preventDefault()} onDragEnter={(e) => {e.preventDefault();
+                props?.onDragOver(e)}}>
                 {tasks.filter((task) => {
                     return !task?.isPriority
                 }).map((task) => {

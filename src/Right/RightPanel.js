@@ -14,15 +14,16 @@ const RightPanel = () => {
         dragItem.current = e.target.id;
     }
     const onDragOver = (e) => {
+        e.preventDefault();
         setDragOverItem(e.target?.id);
     }
 
     const onDragEnd = (e) => {
         const index = tasks.findIndex(task => task.id == e.target?.id);
-        if(dragOverItem == "priority-container") {
+        if(dragOverItem === "priority-container") {
             tasks[index].isPriority = true;
             tasks[index].status = TODO; 
-        } else if (dragOverItem == "non-priority-container") {
+        } else if (dragOverItem === "non-priority-container") {
             tasks[index].isPriority = false;
             tasks[index].status = TODO;
         }         

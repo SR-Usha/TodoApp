@@ -11,7 +11,7 @@ const TopList = (props) => {
             <p className='right-container-name'>
                 Top List
             </p>
-            <div className='cards-container' id="priority-container"onDragEnter={props?.onDragOver}>
+            <div className='cards-container' id="priority-container" onDragOver ={(e)=> e.preventDefault() } onDragEnter={props?.onDragOver}>
             {tasks.filter((task) => {
                     return task?.isPriority
                 }).map((task) => {
