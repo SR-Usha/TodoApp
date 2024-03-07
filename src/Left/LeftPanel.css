@@ -2,7 +2,7 @@
 
 .left-container{
     width: 40%;
-    height: 90%;
+    height: 100%;
     max-width: var(--left-max-width);
     min-width: var(--left-min-width);
 }

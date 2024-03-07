@@ -1,17 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400");
+
 :root {
     --row-max-height: 700px;
-    --row--height:100px;
+    --row-min-height:100px;
     --left-max-width: 600px;
     --left-min-width: 200px;
 
-    --hdr-bg-clr: #F3D7CA;
+    --hdr-bg-clr:  #d7a49a59;
+    --hdr-shd-clr: rgba(215, 164, 154, 0.2);
     --hdr-text-clr: #607274;
+
     --green-background: rgba(244,246,240,.5);
     --green-border-line: rgba(138,159,96,0.5);
-    --btn-clr: #6D4C4F;
+
+    --btn-clr: #A86e58;
+
+    --taskcard-pri-color: rgba(230,240,234,0.8);
+    --taskcard-text-color: #434242;
+    --taskcard-non-pri-clr: rgba(215,164,154,0.2);
+
+    --alltask-color:rgba(210,246,240,0.5);
+    --pri-grey-text-color: rgba(43, 43, 53, 0.9);
+    --sec-grey-text-color: rgba(31,31,31,1);
+
+    --todo-status-clr: rgba(183,61,68,0.65);
+    --inprogress-status-clr: rgba(177,54,157,0.75);
+    --completed-status-clr: rgba(79,177,54,0.7);
+    
+    --text-medium-size: 14px;
+    --task-font-family: "Mukta" ;
+    --font-Martel-Sans: "Martel Sans";
+
+    --soft-grey: rgba(204,204,204, 0.5);
 }
 
 .container {
     width: 100%;
     height: 100vh;
+}
+.content {
+    display: flex;
+    width: 100%;
+    height: 90%;
 }
